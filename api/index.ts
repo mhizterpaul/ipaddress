@@ -9,7 +9,7 @@ const port = 8080;
 dotenv.config();
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello, world!');
+    res.send('Hello!');
 });
 
 
