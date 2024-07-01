@@ -8,6 +8,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 dotenv.config();
 
+app.set('trust proxy', true);
+
 app.get('/', (req: Request, res: Response) => {
     res.send('Hello!');
 });
